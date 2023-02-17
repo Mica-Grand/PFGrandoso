@@ -1,0 +1,194 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.navbar{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+}
+
+.navbar .nav-link.active {
+    background-color: #FF9459;
+    color: white;
+}
+
+.contenedor_hero{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://blog.urbanizainteractiva.com/hubfs/Marketing%20digital.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero_titulo{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0.2px 0.2rem rgb(63, 62, 62);
+    padding: 1rem; 
+}
+
+.hero_subtitulo{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0.2px 0.2rem rgb(63, 62, 62);
+    padding: 1rem; 
+}
+
+.boton_grande{
+    margin-top: 3rem;
+    padding: 1.8rem;
+    background-color: #FF9459;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.a_boton_grande{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+} 
+
+.borde_redondeado{
+    border-radius: 20px;
+}
+
+.seccion_titulo{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #1B1B1B;
+    
+}
+
+.hijo_titulo{
+    margin-block: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.hijo_parrafo{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+
+}
+.contenedor_quienes-somos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/seccion-quienessomos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor_contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/seccion_contacto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor_clientes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/seccion-clientes.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor_servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/seccion-servicios.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* texto con foto a la derecha  y recuadro de color de fondo */
+
+.seccion_div_container{
+    display: flex;
+    background-color: #f2f2f2;
+    margin-top: 5rem;
+    padding: 2rem;
+    width: 100%;
+    align-items: center;
+}
+
+.seccion_texto_cont{
+    width: 50%;
+    padding: 2rem;
+}
+
+.seccion_img_cont{
+    width: 50%;
+    padding: 2rem;
+}
+
+.seccion_img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.seccion_h{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #1B1B1B;
+    
+}
+
+.seccion_p{
+    text-align: left;
+    padding: 1rem;
+    color: #1B1B1B;
+}
+.boton_chico{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    background-color: #FF9459;
+    text-align: center;
+    border-radius: 0.8rem;
+    color: white;
+}
+
+.a_boton_chico{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
