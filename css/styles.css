@@ -26,7 +26,6 @@
     width: 100%;
     height: 100vh;
     background-image: url(https://blog.urbanizainteractiva.com/hubfs/Marketing%20digital.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -89,6 +88,16 @@
     font-family: 'Roboto', sans-serif;
 
 }
+
+.grid_figura{
+    margin: 0;
+    padding: 0.5rem;
+}
+
+figure:hover{
+    transform: translateY(-5px);
+}
+
 .contenedor_quienes-somos{
     display: flex;
     justify-content: center;
@@ -134,7 +143,7 @@
 }
 
 
-/* texto con foto a la derecha  y recuadro de color de fondo */
+/* foto y texto */
 
 .seccion_div_container{
     display: flex;
@@ -165,7 +174,7 @@
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     padding: 1rem;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #1B1B1B;
     
@@ -176,6 +185,7 @@
     padding: 1rem;
     color: #1B1B1B;
 }
+
 .boton_chico{
     margin-top: 2rem;
     margin-left: 1rem;
@@ -191,4 +201,50 @@
     text-decoration: none;
     font-weight: 700;
     font-size: 1rem;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .seccion_div_container {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .seccion_texto_cont,
+    .seccion_img_cont {
+        width: 100%;
+        padding: 1rem;
+    }
+    .seccion_h {
+        font-size: 2rem;
+    }
+    .seccion_p {
+        font-size: 0.9rem;
+    }
+
+    .boton_chico {
+        margin-top: 1rem;
+    }
+}
+  /* Estilos para pantallas grandes */
+@media (min-width: 769px) {
+    .seccion_div_container {
+        margin-top: 5rem;
+    }
+
+    .seccion_texto_cont {
+        width: 50%;
+        padding: 2rem;
+    }
+    .seccion_img_cont {
+        width: 50%;
+        padding: 2rem;
+    }
+
+    .seccion_h {
+        font-size: 3rem;
+    }
+
+    .seccion_p {
+        font-size: 1rem;
+    }
 }
