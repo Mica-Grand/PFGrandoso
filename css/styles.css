@@ -48,29 +48,30 @@
     text-shadow: 0.2rem 0.2rem rgb(63, 62, 62);
     padding: 1rem; 
 }
-Pantallas pequeñas (móviles)
-@media (max-width: 767px) {
+
+/* Adaptacion de hero a pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
     .contenedor_hero {
     height: 70vh;
-    padding: 1rem;
     }
     .hero_titulo{
-        font-size: 2rem;
+        font-size: 2.5rem;
+        padding: 0.5rem;
     }
     .hero_subtitulo{
-        font-size: 1rem;
+        font-size: 2rem;
+        padding: 0.5rem;
     }
     .boton_grande{
-        margin-top: 1rem;
-        padding: 0.8rem;
+        margin-top: 0.8rem;
+        padding: 0.5rem;
         border-radius: 10px;
     }
     
     .a_boton_grande{
-        font-size: 1rem;
+        font-size: 0.8rem;
     } 
 }
-
 
 
 .boton_grande{
@@ -153,7 +154,7 @@ Pantallas pequeñas (móviles)
     background-repeat: no-repeat;
 }
 
-/* foto y texto */
+/* recuadro foto y texto */
 
 .seccion_div_container{
     display: flex;
@@ -213,7 +214,7 @@ Pantallas pequeñas (móviles)
     font-size: 1rem;
 }
 
-/* Estilos para pantallas pequeñas */
+/* Seccion recuadro foto y texto - Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
     .seccion_div_container {
         flex-direction: column;
@@ -269,6 +270,7 @@ Pantallas pequeñas (móviles)
     padding: 2rem;
     
 }
+
 /* seccion servicios */
 
 .contenedor_servicios{
@@ -282,8 +284,8 @@ Pantallas pequeñas (móviles)
     background-repeat: no-repeat;
 }
 /* Pantallas pequeñas (móviles) */
-@media (max-width: 767px) {
-    .contenedor_servicios {
+@media (max-width: 768px) {
+    .contenedor_servicios, .contenedor_contacto, .contenedor_quienes-somos, .contenedor_clientes {
     height: 30vh;
     padding: 1rem;
     }
