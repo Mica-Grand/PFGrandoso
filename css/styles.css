@@ -94,10 +94,6 @@
     padding: 0.5rem;
 }
 
-figure:hover{
-    transform: translateY(-5px);
-}
-
 .contenedor_quienes-somos{
     display: flex;
     justify-content: center;
@@ -247,4 +243,8 @@ figure:hover{
     .seccion_p {
         font-size: 1rem;
     }
+}
+
+.btn .btn-primary{
+    background-color: #FF9459;
 }
