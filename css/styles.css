@@ -46,7 +46,7 @@
     text-shadow: 0.2rem 0.2rem rgb(63, 62, 62);
     padding: 1rem; 
 }
-/* Pantallas pequeñas (móviles)
+Pantallas pequeñas (móviles)
 @media (max-width: 767px) {
     .contenedor_hero {
     height: 70vh;
@@ -58,7 +58,7 @@
     .hero_subtitulo{
         font-size: 2rem;
     }
-} */
+}
 
 
 .boton_grande{
