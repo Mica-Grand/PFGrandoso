@@ -20,13 +20,15 @@
 
 .contenedor_hero{
     display: flex;
-    flex-flow: column wrap;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
     background-image: url(https://blog.urbanizainteractiva.com/hubfs/Marketing%20digital.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .hero_titulo{
@@ -53,12 +55,22 @@ Pantallas pequeñas (móviles)
     padding: 1rem;
     }
     .hero_titulo{
-        font-size: 3rem;
-    }
-    .hero_subtitulo{
         font-size: 2rem;
     }
+    .hero_subtitulo{
+        font-size: 1rem;
+    }
+    .boton_grande{
+        margin-top: 1rem;
+        padding: 0.8rem;
+        border-radius: 10px;
+    }
+    
+    .a_boton_grande{
+        font-size: 1rem;
+    } 
 }
+
 
 
 .boton_grande{
