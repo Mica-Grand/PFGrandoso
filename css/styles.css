@@ -16,6 +16,7 @@
 .navbar .nav-link.active {
     background-color: #FF9459;
     color: white;
+    padding-left: 0.2rem;
 }
 
 .contenedor_hero{
@@ -85,7 +86,7 @@
 .a_boton_grande{
     color: white;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 2rem;
 } 
 
@@ -93,11 +94,15 @@
     border-radius: 20px;
 }
 
+/* Personalizacion de espacios del container-fluid de Bootstrap en la grilla de servicios */
+
+
+
 .seccion_titulo{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding-top: 5rem;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #1B1B1B;
     
@@ -120,6 +125,8 @@
     margin: 0;
     padding: 0.5rem;
 }
+
+/*  */
 
 .contenedor_quienes-somos{
     display: flex;
