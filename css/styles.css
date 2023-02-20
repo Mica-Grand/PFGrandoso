@@ -50,6 +50,30 @@
     padding: 1rem; 
 }
 
+.boton_grande{
+    margin-top: 3rem;
+    padding: 1.8rem;
+    background-color: #FF9459;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+
+.a_boton_grande{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2rem;
+} 
+
+.boton_grande:hover {
+    background-color: #FFC371;
+}
+
+.borde_redondeado{
+    border-radius: 1rem;
+}
+
 /* Adaptacion de hero a pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
     .contenedor_hero {
@@ -64,35 +88,19 @@
         padding: 0.5rem;
     }
     .boton_grande{
-        margin-top: 0.8rem;
-        padding: 0.5rem;
-        border-radius: 10px;
+        margin-top: 2rem;
+        padding: 0.8rem;
+        border-radius: 1rem;
     }
     
     .a_boton_grande{
-        font-size: 0.8rem;
+        font-size: 1.5rem;
     } 
 }
 
 
-.boton_grande{
-    margin-top: 3rem;
-    padding: 1.8rem;
-    background-color: #FF9459;
-    text-align: center;
-    border-radius: 20px;
-}
 
-.a_boton_grande{
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 2rem;
-} 
 
-.borde_redondeado{
-    border-radius: 20px;
-}
 
 /* Personalizacion de espacios del container-fluid de Bootstrap en la grilla de servicios */
 
@@ -113,11 +121,13 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
+    color: #1B1B1B;
 }
 
 .hijo_parrafo{
     text-align: left;
     font-family: 'Roboto', sans-serif;
+    color: #1B1B1B;
 
 }
 
@@ -214,6 +224,10 @@
     color: white;
 }
 
+.boton_chico:hover {
+    background-color: #FFC371;
+}
+
 .a_boton_chico{
     color: white;
     text-decoration: none;
@@ -298,7 +312,17 @@
     }
 }
 
+/* Viñetas con color */
 
+li::marker{
+    color: #FF9459;
+    font-size: 1.5rem;
+
+}
+
+li strong{
+    color: #FF9459;
+}
 
 
 
