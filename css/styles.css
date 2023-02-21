@@ -83,37 +83,9 @@
     border-radius: 1rem;
 }
 
-/* Adaptacion de hero  a pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-    .contenedor_hero {
-    height: 70vh;
-    }
-    .hero_titulo{
-        font-size: 2.5rem;
-        padding: 0.5rem;
-    }
-    .hero_subtitulo{
-        font-size: 2rem;
-        padding: 0.5rem;
-    }
-    .boton_grande{
-        margin-top: 2rem;
-        padding: 0.8rem;
-        border-radius: 1rem;
-    }
-    
-    .a_boton_grande{
-        font-size: 1.5rem;
-    } 
-}
-
-
-
 
 
 /* Personalizacion de espacios del container-fluid de Bootstrap en la grilla de servicios */
-
-
 
 .seccion_titulo{
     font-family: 'Montserrat', sans-serif;
@@ -173,6 +145,7 @@
     width: 100%;
     height: 50vh;
     background-image: url(../img/seccion-quienessomos.png);
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -184,6 +157,7 @@
     width: 100%;
     height: 50vh;
     background-image: url(../img/seccion_contacto.png);
+    background-position: center left;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -195,6 +169,7 @@
     width: 100%;
     height: 50vh;
     background-image: url(../img/seccion-clientes.png);
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -206,16 +181,9 @@
     width: 100%;
     height: 50vh;
     background-image: url(../img/seccion-servicios.png);
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-/* Adaptacion de los hero de las pages a pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-    .contenedor_servicios, .contenedor_contacto, .contenedor_quienes-somos, .contenedor_clientes {
-    height: 30vh;
-    padding: 1rem;
-    }
 }
 
 
@@ -283,28 +251,6 @@
     font-size: 1rem;
 }
 
-/* Seccion recuadro foto y texto - Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
-    .seccion_div_container {
-        flex-direction: column;
-        margin-top: 3rem;
-    }
-    .seccion_texto_cont,
-    .seccion_img_cont {
-        width: 100%;
-        padding: 1rem;
-    }
-    .seccion_h {
-        font-size: 2rem;
-    }
-    .seccion_p {
-        font-size: 0.9rem;
-    }
-
-    .boton_chico {
-        margin-top: 1rem;
-    }
-}
 
 /* footer */
 
@@ -380,5 +326,128 @@ li strong{
 }
 
 
+/* contacto */
 
+.form_col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+.form_grupo{
+    margin: 2rem;
+    padding-bottom: 1.5rem;
+    
+}
+.form_etiqueta {
+    width: 10rem;
+    margin-bottom: 0.3rem;
+    }
+
+.form_input {
+    width: calc(100% - 10rem);
+    }
+
+.form_grupo:last-child {
+    text-align: right;
+}
+
+.boton_form{
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #FF9459;
+    text-align: center;
+    border-radius: 0.8rem;
+    color: white;
+}
+
+.boton_form:hover {
+    background-color: #FFC371;
+}
+
+.mapa{
+    max-width: 100%;
+    height: 50vh;
+}
+
+.mapa_contenedor{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.visitanos_contenedor{
+    margin-top: 5rem;
+    background-color: white;
+}
+
+  /* Estilos para pantallas medianas y peque */
+@media (max-width: 767px) {
+    .form_contenedor {
+    justify-content: center;
+    align-items: center;
+    }
+    .form_etiqueta {
+    width: 100%;
+    }
+    .form_input {
+    width: 100%;
+    }
+    .col_imagen {
+    display: none;
+        }
+
+    /* Seccion recuadro foto y texto - Estilos para pantallas pequeñas */
+    .seccion_div_container {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .seccion_texto_cont,
+    .seccion_img_cont {
+        width: 100%;
+        padding: 1rem;
+    }
+    .seccion_h {
+        font-size: 2rem;
+    }
+    .seccion_p {
+        font-size: 0.9rem;
+    }
+
+    .boton_chico {
+        margin-top: 1rem;
+    }
+
+/* Adaptacion de los hero de las pages a pantallas pequeñas (móviles) */
+
+    .contenedor_servicios, .contenedor_contacto, .contenedor_quienes-somos, .contenedor_clientes {
+        height: 30vh;
+        padding: 1rem;
+        }
+
+/* Adaptacion de hero  a pantallas pequeñas (móviles) */
+    .contenedor_hero {
+    height: 70vh;
+    }
+    .hero_titulo{
+        font-size: 2.5rem;
+        padding: 0.5rem;
+    }
+    .hero_subtitulo{
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+    .boton_grande{
+        margin-top: 2rem;
+        padding: 0.8rem;
+        border-radius: 1rem;
+    }
+    
+    .a_boton_grande{
+        font-size: 1.5rem;
+    } 
+}
 
