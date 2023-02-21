@@ -150,8 +150,9 @@
     display: block;
     margin-top: 2rem;
     clear: both;
-    color: #FF9459;
+    -webkit-text-decoration: none;
     text-decoration: none;
+    color: #FF9459;
     font-size: 1.2rem;
     text-align: center;
     font-weight: 700;
