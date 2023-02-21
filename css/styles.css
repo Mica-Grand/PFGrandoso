@@ -21,6 +21,11 @@
     padding-left: 0.2rem;
 }
 
+.nav-link:hover{
+    background-color: #FFC371;
+    color: white; 
+}
+
 /* hero del Index */
 
 .contenedor_hero{
@@ -139,6 +144,24 @@
     margin: 0;
     padding: 0.5rem;
 }
+
+
+.ver_mas{
+    display: block;
+    margin-top: 2rem;
+    clear: both;
+    color: #FF9459;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.ver_mas:hover{
+    color: #FFC371;
+
+}
+
 
 /* Heros de las pages */
 
