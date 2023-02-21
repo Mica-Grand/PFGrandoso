@@ -8,6 +8,8 @@
     vertical-align: baseline;
 }
 
+/* Header - navbar */
+
 .navbar{
     font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
@@ -18,6 +20,8 @@
     color: white;
     padding-left: 0.2rem;
 }
+
+/* hero del Index */
 
 .contenedor_hero{
     display: flex;
@@ -37,7 +41,7 @@
     text-align: center;
     font-size: 4rem;
     color: white;
-    text-shadow: 0.2rem 0.2rem rgb(63, 62, 62);
+    text-shadow: 0.2rem 0.2rem #1B1B1B;
     padding: 1rem; 
 }
 
@@ -46,7 +50,7 @@
     text-align: center;
     font-size: 3rem;
     color: white;
-    text-shadow: 0.2rem 0.2rem rgb(63, 62, 62);
+    text-shadow: 0.1rem 0.1rem #1B1B1B;
     padding: 1rem; 
 }
 
@@ -74,7 +78,7 @@
     border-radius: 1rem;
 }
 
-/* Adaptacion de hero a pantallas pequeñas (móviles) */
+/* Adaptacion de hero  a pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
     .contenedor_hero {
     height: 70vh;
@@ -136,7 +140,7 @@
     padding: 0.5rem;
 }
 
-/*  */
+/* Heros de las pages */
 
 .contenedor_quienes-somos{
     display: flex;
@@ -171,7 +175,27 @@
     background-repeat: no-repeat;
 }
 
-/* recuadro foto y texto */
+.contenedor_servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/seccion-servicios.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Adaptacion de los hero de las pages a pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .contenedor_servicios, .contenedor_contacto, .contenedor_quienes-somos, .contenedor_clientes {
+    height: 30vh;
+    padding: 1rem;
+    }
+}
+
+
+/* recuadro foto y texto Index */
 
 .seccion_div_container{
     display: flex;
@@ -263,6 +287,7 @@
 .footer_contenedor{
     margin-top: 5rem;
     font-family: "Roboto", sans-serif;
+    background-color: #f2f2f2;
 }
 
 .footer_titulo{
@@ -292,25 +317,31 @@
     
 }
 
-/* seccion servicios */
+/* section-article - ajustes de layout de Bootstrap */
 
-.contenedor_servicios{
+.articulo_col{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 50vh;
-    background-image: url(../img/seccion-servicios.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-/* Pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-    .contenedor_servicios, .contenedor_contacto, .contenedor_quienes-somos, .contenedor_clientes {
-    height: 30vh;
+
+.articulo_col_imagen{
     padding: 1rem;
-    }
+    max-width: 100%;
+    height: auto;
 }
+
+.articulo_row-2{
+    background-color: #f2f2f2;
+    margin-top: 3rem;
+}
+
+.articulo_row{
+    margin-top: 5rem;
+    align-items: center;
+
+}
+
 
 /* Viñetas con color */
 
