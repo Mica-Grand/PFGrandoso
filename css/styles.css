@@ -35,7 +35,8 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-image: url(https://blog.urbanizainteractiva.com/hubfs/Marketing%20digital.jpg);
+    /* background-image: url(https://blog.urbanizainteractiva.com/hubfs/Marketing%20digital.jpg); */
+    background-image: url(../img/fondo-violeta.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -86,6 +87,11 @@
 
 
 /* Personalizacion de espacios del container-fluid de Bootstrap en la grilla de servicios */
+
+.contenedor_espacios{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
 
 .seccion_titulo{
     font-family: 'Montserrat', sans-serif;
