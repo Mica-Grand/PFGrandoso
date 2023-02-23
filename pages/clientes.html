@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clientes - Estudio 360</title>
     <link rel="shortcut icon" href="../img/favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,13 +16,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header class="sticky-top">
-        <!-- navbar de Bootstrap -->
+
+        <!--------------- navbar de Bootstrap ----------------------->
         <nav class="navbar navbar-expand-lg" style="background-color: white;">
             <div class="container-fluid d-flex justify-content-between">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logo-transp-svg.svg" alt="logo estudio 360"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo-transp-svg.svg"
+                        alt="logo estudio 360"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -46,49 +52,72 @@
         </nav>
     </header>
     <main>
+
+        <!-------------------- hero ------------------------>
         <section class="contenedor_clientes">
-                <h1 class="hero_titulo">Clientes</h1>
+            <h1 class="hero_titulo">Clientes</h1>
         </section>
 
-        <section class="clientes_lista">
-            <h2 class="titulo_seccion">Confian en nuestro trabajo</h2>
-            <article>
-                <ul>
-                    <li>
-                        <img src="../img/logo-cliente-1.png" alt="logo de salford and co agency">
-                        <h3>Nombre de empresa 1</h3>
-                    </li>
-                    <li>
-                        <img src="../img/logo-cliente-2.png" alt="logo de amapolas indumentaria">
-                        <h3>Nombre de empresa 2</h3>
-                    </li>
-                    <li>
-                        <img src="../img/logo-cliente-3.png" alt="logo de lo joyeria clasica">
-                        <h3>Nombre de empresa 3</h3>
-                    </li>
-                    <li>
-                        <img src="../img/logo-cliente-4.png" alt="logo de lo de maria reposteria">
-                        <h3>Nombre de empresa 4</h3>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h2 class="titulo_seccion">Reseñas</h2>
-                <div>
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus pariatur fugiat ipsam nostrum
-                        cupiditate. Iusto, corporis, blanditiis esse atque suscipit, hic veniam porro vel fuga nihil
-                        dicta praesentium doloribus sit".</p>
+        <section class="seccion_carrousel">
+            <h2 class="seccion_titulo">Confian en nuestro trabajo</h2>
+            <div class="container resenia_contenedor" data-bs-theme="dark">
+                <div id="carrouselClientes" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner justify-content-center">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="../img/logo-alaska-fb.svg" class="d-block w-100 img_carou2"
+                                alt="Logo de Alaska Indumentaria">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="../img/logo-lorna-fb.svg" class="d-block w-100 img_carou2"
+                                alt="Logo de Lorna Alva">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="../img/logo-amapolas-fb.svg" class="d-block w-100 img_carou2"
+                                alt="Logo de Amapolas">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="../img/logo-martina-fb.svg" class="d-block w-100 img_carou2" alt="Logo de Martina">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carrouselClientes"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carrouselClientes"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
-                <div>
-                    <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed temporibus, magni perspiciatis fuga
-                        voluptate quaerat, distinctio quisquam similique impedit fugit quis numquam rerum est doloribus
-                        eius optio itaque cum nemo".</p>
+            </div>
+        </section>
+
+        <!--------------------------Reseñas de clientes ------------------->
+        <section class="container my-5">
+            <article class="row resenia_contenedor">
+                <div class="col-md-7 resenia borde_redondeado">
+                    <h2 class="seccion_titulo">Qué dicen de nosotros</h2>
+                    <p class="resenia_p">"He trabajado con Estudio 360 en varias ocasiones y siempre me han dejado impresionado con su
+                        profesionalismo y creatividad. Desde el diseño de mi sitio web hasta la gestión de mis campañas publicitarias,
+                        siempre han demostrado un gran conocimiento y habilidad en el campo del marketing digital. Lo que más aprecio de
+                        ellos es su atención al cliente excepcional: siempre están dispuestos a responder mis preguntas y preocupaciones, y
+                        me mantienen informado en cada paso del proceso. Definitivamente recomiendo a Estudio 360 a cualquier persona que
+                        esté buscando una agencia de marketing confiable y eficaz."
+                    </p>
+                    <p class="resenia_p">Julieta Arriaga, Owner de Amapolas.
+                    </p>
+                </div>
+                <div class="col-md-5 d-none d-sm-block articulo_col">
+                    <img class="borde_redondeado resenia_img"
+                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80"
+                        alt="Teclado cuya tecla Enter es naranja y lleva la palabra Marketing">
                 </div>
             </article>
         </section>
     </main>
 
-    <!-- footer -->
+    <!-- footer ------------------------------------>
     <footer class="footer_contenedor">
         <div class="container-fluid">
             <div class="row gutter row_espacio">
@@ -97,15 +126,19 @@
                     <ul class="list-unstyled">
                         <li><strong>Dirección:</strong> Calle 360, Carmen de Patagones, Buenos Aires, Argentina</li>
                         <li><strong>Teléfono:</strong> +54 9 2920 270000</li>
-                        <li><strong>Email:</strong> <a href="mailto:info@estudio360.com" class="footer_a"> info@estudio360.com</a></li>
+                        <li><strong>Email:</strong> <a href="mailto:info@estudio360.com" class="footer_a">
+                                info@estudio360.com</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 p-3">
                     <h4 class="footer_titulo">Seguinos</h4>
                     <ul class="list-unstyled">
-                        <li><a class="footer_a" href="https://facebook.com"><i class="bi bi-facebook"></i> Facebook</a></li>
-                        <li><a class="footer_a" href="https://twitter.com"><i class="bi bi-twitter"></i> Twitter</a></li>
-                        <li><a class="footer_a" href="https://instagram.com"><i class="bi bi-instagram"></i> Instagram</a></li>
+                        <li><a class="footer_a" href="https://facebook.com"><i class="bi bi-facebook"></i> Facebook</a>
+                        </li>
+                        <li><a class="footer_a" href="https://twitter.com"><i class="bi bi-twitter"></i> Twitter</a>
+                        </li>
+                        <li><a class="footer_a" href="https://instagram.com"><i class="bi bi-instagram"></i>
+                                Instagram</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 p-3">
@@ -122,12 +155,16 @@
         <div class="container-fluid no-gutters text-center footer_derechos">
             <div class="row row_espacio">
                 <div class="col-12">
-                <p>© Estudio 360. Todos los derechos reservados</p>
+                    <p>© Estudio 360. Todos los derechos reservados</p>
                 </div>
             </div>
         </div>
     </footer>
-<!-- script de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> 
+
+    <!-- script de Bootstrap ------------------>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
