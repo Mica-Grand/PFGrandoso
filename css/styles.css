@@ -307,23 +307,12 @@
 }
 
 
-/* section-article - ajustes de layout de Bootstrap */
-
-/* .articulo_col{
-    display: flex;
-    justify-content: center;
-} */
-
 .articulo_col_imagen{
     padding: 1rem;
     max-width: 100%;
     height: 50%;
 }
-/* .articulo_col_imagen{
-    padding: 1rem;
-    max-width: 100%;
-    height: 50%;
-} */
+
 
 .articulo_row-2{
     background-color: #f2f2f2;
@@ -417,9 +406,6 @@ li strong{
     width: auto;
 }
 
-.carousel .img_carou2{
-    max-height: 50vh;
-}
 
 
 /* clientes */
@@ -435,24 +421,23 @@ li strong{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2rem 2.5rem;
 }
 
 .resenia_p{
     text-align: left;
-    padding: 2rem;
+    margin-top: 1rem;
     color: #1B1B1B;
     line-height: 2.5rem;
     font-size: 1.3rem;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .resenia .resenia_p:last-child{
-    font-size: 1.7rem;
-    font-style: normal;
-    font-weight: 700;
-    text-align: right;
+    font-weight: 600;
 }
+
 
 .resenia_img{
     max-width: 100%;
@@ -460,7 +445,6 @@ li strong{
 }
 
 
-/* Recordar hacer una query para esta parte de reseñas a dispositivos pequeños */
 
   /* Estilos para pantallas medianas y peque */
 @media (max-width: 767px) {
@@ -489,7 +473,7 @@ li strong{
         padding: 1rem;
     }
     .seccion_h {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .seccion_p {
         font-size: 0.9rem;
@@ -527,5 +511,26 @@ li strong{
     .a_boton_grande{
         font-size: 1.5rem;
     } 
+
+    /* resenias */
+    .resenia_contenedor{
+        margin-top: 4rem;
+        padding: 1rem;
+    }
+    
+    .resenia{
+        padding: 1rem 1rem;
+    }
+    
+    .resenia_p{
+        text-align: left;
+        margin-top: 1rem;
+        color: #1B1B1B;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 500;
+    }
 }
+
 
