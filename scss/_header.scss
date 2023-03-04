@@ -1,0 +1,27 @@
+
+@use "_variables" as var;
+
+// Header - navbar
+
+.navbar {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    .navbar-brand img {
+        max-height: 300px;
+        max-width: 100%;
+    }
+}
+.nav-link {
+    &:hover {
+        background-color: var.$color_hover;
+        color: white;
+    }
+    &.active {
+        background-color: #FF9459;
+        color: white!important;
+        padding-left: 0.2rem;
+    }
+}
+
+
+
