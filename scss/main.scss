@@ -1,10 +1,86 @@
-@use "_reset.scss";
-@use "_clientes.scss";
-@use "_contacto.scss";
-@use "_quienes-somos.scss";
-@use "_servicios.scss";
-@use "_variables.scss";
-@use "_index.scss";
-@use "_header.scss";
-@use "_footer.scss";
+@use "_variables.scss" as var;
 
+
+/* reset */
+​* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/*Header - navbar*/
+
+.navbar {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    .navbar-brand img {
+        max-height: 300px;
+        max-width: 100%;
+    }
+}
+.nav-link {
+    &:hover {
+        background-color: var.$color_hover;
+        color: white;
+    }
+    &.active {
+        background-color: var.$color_naranja;
+        color: white!important;
+        padding-left: 0.2rem;
+    }
+}
+
+/*footer*/
+
+.footer_contenedor{
+    margin-top: 5rem;
+    font-family: var.$roboto;
+    background-color: var.$color_gris;
+}
+
+.footer_titulo{
+    font-family: 'Montserrat', sans-serif;
+    color:var.$color_naranja;
+}
+
+.footer_a{
+    color: var.$color_carbon;
+    text-decoration: none;
+    .bi {
+        color: var.$color_naranja;
+        font-size: 1.8rem;
+    }
+}
+
+.footer_derechos{
+    text-align: center;
+    color: white;
+    background-color: var.$color_naranja;
+    width: 100%;
+}
+
+.row_espacio{
+    padding: 2rem;
+}
+
+
+
+/* hero del Index */
+
+.contenedor_hero{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 87vh;
+    /* background-image: url(https://blog.urbanizainteractiva.com/hubfs/Marketing%20digital.jpg); */
+    background-image: url(../img/fondo-violeta-c.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
