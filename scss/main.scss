@@ -1,10 +1,235 @@
-@use "_reset.scss";
-@use "_clientes.scss";
-@use "_contacto.scss";
-@use "_quienes-somos.scss";
-@use "_servicios.scss";
-@use "_variables.scss";
-@use "_index.scss";
-@use "_header.scss";
-@use "_footer.scss";
+@use "variables" as var;
+@use "mixins" as mixins;
 
+
+/* reset */
+​* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/*Header - navbar*/
+
+.navbar {
+    font-family: var.$fuente_principal;
+    font-size: 1.2rem;
+    .navbar-brand img {
+        max-height: 300px;
+        max-width: 100%;
+    }
+}
+.nav-link {
+    &:hover {
+        background-color: var.$color_hover;
+        color: var.$color_texto2;
+    }
+    &.active {
+        background-color: var.$color_principal;
+        color: var.$color_texto2!important;
+        padding-left: 0.2rem;
+    }
+}
+
+/*footer*/
+
+.footer_contenedor{
+    margin-top: 5rem;
+    font-family: var.$fuente_principal;
+    background-color: var.$color_fondo;
+}
+
+.footer_titulo{
+    font-family: var.$fuente_secundaria;
+    color:var.$color_principal;
+}
+
+.footer_a{
+    color: var.$color_texto;
+    text-decoration: none;
+    .bi {
+        color: var.$color_principal;
+        font-size: 1.8rem;
+    }
+}
+
+.footer_derechos{
+    text-align: center;
+    color: var.$color_texto2;
+    background-color: var.$color_principal;
+    width: 100%;
+}
+
+.row_espacio{
+    padding: 2rem;
+}
+
+
+
+/* hero del Index */
+
+.contenedor_hero{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 87vh;
+    background-image: url(../img/fondo-violeta-c.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero {
+    @include mixins.hero-titulo-subtitulo;
+}
+
+.hero_titulo {
+    @include mixins.hero-titulo-subtitulo;
+    font-size: 4rem;
+    text-shadow: 0.2rem 0.2rem var.$color_texto;
+}
+
+.hero_subtitulo {
+    @include mixins.hero-titulo-subtitulo;
+    font-size: 3rem;
+    text-shadow: 0.1rem 0.1rem var.$color_texto;
+}
+
+
+/*heroes de las pages*/
+
+.contenedor_seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor_quienes-somos {
+    @extend .contenedor_seccion;
+    background-image: url(../img/seccion-quienessomos-c.png);
+    background-position: top center;
+}
+
+.contenedor_contacto {
+    @extend .contenedor_seccion;
+    background-image: url(../img/seccion-contacto-c.png);
+    background-position: top left;
+}
+
+.contenedor_clientes {
+    @extend .contenedor_seccion;
+    background-image: url(../img/seccion-clientes-c.png);
+    background-position: top center;
+}
+
+.contenedor_servicios {
+    @extend .contenedor_seccion;
+    background-image: url(../img/seccion-servicios-c.png);
+    background-position: bottom center;
+}
+
+
+/* Diferentes estilos de parrafo, titulos y espaciado */
+
+.seccion_titulo{
+    font-family: var.$fuente_secundaria;
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var.$color_texto;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.hijo_titulo{
+    margin-block: 1rem;
+    font-family: var.$fuente_secundaria;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var.$color_texto;
+}
+
+.hijo_parrafo{
+    text-align: left;
+    font-family: var.$fuente_principal;
+    color: var.$color_texto
+}
+
+.seccion_h{
+    font-family: var.$fuente_secundaria;
+    text-align: left;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var.$color_texto;
+}
+
+.seccion_p{
+    text-align: left;
+    padding: 1rem;
+    color: var.$color_texto;
+}
+
+.margen{
+    margin-top: 5rem;
+}
+
+
+/*botones*/
+
+.boton_chico{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    background-color: var.$color_principal;
+    text-align: center;
+    border-radius: 0.8rem;
+    border-color: var.$color_principal;
+    border: none;
+
+    &:hover {
+        background-color: var.$color_hover;
+    }
+
+    .a_boton_chico{
+        color: var.$color_texto2;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1rem;
+        }
+}
+
+.boton_grande{
+    margin-top: 3rem;
+    padding: 1.8rem;
+    background-color: var.$color_principal;
+    text-align: center;
+    border-radius: 2rem;
+    border: none;
+
+    &:hover{
+        background-color: var.$color_hover;
+    }
+    .a_boton_grande{
+        color: var.$color_texto2;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 2rem;
+        }
+}
+
+
+.borde_redondeado{
+    border-radius: 1rem;
+}
