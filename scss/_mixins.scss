@@ -1,0 +1,12 @@
+
+@use "variables" as var;
+
+@mixin hero-titulo-subtitulo {
+    font-family: var.$fuente_secundaria;
+    text-align: center;
+    font-size: 4rem;
+    color: var.$color_texto2;
+    padding: 1rem;
+    text-shadow: 0.2rem 0.2rem var.$color_texto;
+}
+
