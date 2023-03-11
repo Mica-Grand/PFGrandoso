@@ -1,0 +1,64 @@
+
+
+/*botones*/
+@use "variables" as var;
+@use "mixins" as mixins;
+
+.boton_chico {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    background-color: var.$color_principal;
+    text-align: center;
+    border-radius: 0.8rem;
+    border: none;
+
+    &:hover {
+        background-color: var.$color_hover;
+    }
+
+    .a_boton_chico {
+        color: var.$color_texto2;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+}
+
+.boton_grande {
+    margin-top: 3rem;
+    padding: 1.8rem;
+    background-color: var.$color_principal;
+    text-align: center;
+    border-radius: 2rem;
+    border: none;
+
+    &:hover {
+        background-color: var.$color_hover;
+    }
+
+    .a_boton_grande {
+        color: var.$color_texto2;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+}
+
+.borde_redondeado {
+    border-radius: 1rem;
+}
+
+.boton_form {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var.$color_principal;
+    text-align: center;
+    border-radius: 0.8rem;
+    color: var.$color_texto2;
+    border: none;
+
+    &:hover {
+        background-color: var.$color_hover;
+    }
+}

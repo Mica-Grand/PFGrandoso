@@ -1,0 +1,190 @@
+@use "variables" as var;
+@use "mixins" as mixins;
+
+/* Diferentes estilos de parrafo, titulos y espaciado */
+
+.seccion_h2 {
+    font-family: var.$fuente_secundaria;
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var.$color_texto;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.hijo_titulo {
+    margin-block: 1rem;
+    font-family: var.$fuente_secundaria;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var.$color_texto;
+}
+
+.hijo_parrafo {
+    text-align: left;
+    font-family: var.$fuente_principal;
+    color: var.$color_texto
+}
+
+.seccion_h {
+    font-family: var.$fuente_secundaria;
+    text-align: left;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var.$color_texto;
+}
+
+.seccion_p {
+    text-align: left;
+    padding: 1rem;
+    color: var.$color_texto;
+}
+
+.margen {
+    margin-top: 5rem;
+}
+
+
+/* Grilla de servicios */
+
+.contenedor_espacios {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.grid_figura {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.ver_mas {
+    display: block;
+    margin-top: 2rem;
+    clear: both;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: var.$color_principal;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 700;
+
+    &:hover {
+        color: var.$color_hover;
+    }
+}
+
+
+/* recuadro foto y texto Index */
+
+.seccion_div_container {
+    display: flex;
+    background-color: var.$color_fondo;
+    margin-top: 5rem;
+    padding: 2rem;
+    width: 100%;
+    align-items: center;
+}
+
+.seccion_texto_cont {
+    width: 50%;
+    padding: 2rem;
+}
+
+.seccion_img_cont {
+    @extend .seccion_texto_cont;
+}
+
+.seccion_img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Dos columnas texto-imagen y texto-texto*/
+
+.articulo_col_imagen {
+    padding: 1rem;
+    max-width: 100%;
+    height: auto;  
+}
+
+.articulo_row-2 {
+    background-color: var.$color_fondo;
+    margin-top: 5rem;
+}
+
+.articulo_row {
+    margin-top: 5rem;
+    align-items: center;
+}
+
+
+/*Lista con vinieta y titulo de color*/
+
+li {
+    &::marker {
+        color: var.$color_principal;
+        font-size: 1.5rem;
+    }
+
+    strong {
+        color: var.$color_principal;
+    }
+}
+
+
+/* carrousel */
+
+.carousel {
+    margin-top: 5rem;
+
+    .img_carou {
+        max-height: 80vh;
+        width: auto;
+    }
+}
+
+
+/* resenias */
+
+.resenia_contenedor {
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: var.$color_fondo;
+    border-radius: 1rem;
+
+    .resenia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 2.5rem;
+    
+        .resenia_p {
+            text-align: left;
+            margin-top: 1rem;
+            color: var.$color_texto;
+            line-height: 2.5rem;
+            font-size: 1.3rem;
+            font-style: italic;
+            font-weight: 500;
+    
+            &:last-child {
+                font-weight: 700;
+            }
+        }
+    
+        .resenia_img {
+            @extend .articulo_col_imagen;
+            display: block;
+        }
+    }
+}
+
+
+
+

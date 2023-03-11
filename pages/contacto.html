@@ -59,42 +59,45 @@
             <div class="container">
                 <div class="row mt-5">
                     <div class="col-lg-6 col-md-12 form_col">
-                        <h2 class="seccion_h text-center">Dejanos tu consulta</h2>
+                        <!-- <h2 class="seccion_h text-center">Dejanos tu consulta</h2> -->
                         <form action="" method="post">
-                            <div class="form_grupo">
-                                <label for="nombre" class="form_etiqueta">Nombre</label>
-                                <input type="text" class="form_control form_input" name="nombre" id="nombre"
-                                    placeholder="Ej.: Silvia Pérez" required>
-                            </div>
-                            <div class="form_grupo">
-                                <label for="email" class="form_etiqueta">Email </label>
-                                <input type="email" class="form_control form_input" name="email" id="email" required>
-                            </div>
-                            <div class="form_grupo">
-                                <label for="tel" class="form_etiqueta">Teléfono</label>
-                                <input type="tel" class="form_control form_input" name="tel" id="tel"
-                                    placeholder="Ej.: 541140203040">
-                            </div>
-                            <div class="form_grupo">
-                                <label for="mensaje" class="form_etiqueta">Escribí tu mensaje</label>
-                                <textarea class="form_control form_input" name="mensaje" id="mensaje" cols="30"
-                                    rows="5"></textarea>
-                            </div>
-                            <div class="form_grupo">
-                                <button type="reset" class="boton_form">Borrar</button>
-                                <button type="submit" class="boton_form">Enviar</button>
-                            </div>
+                            <fieldset>
+                                <legend class="seccion_h text-center">Dejanos tu consulta</legend>
+                                <div class="form_grupo">
+                                    <label for="nombre" class="form_etiqueta">Nombre</label>
+                                    <input type="text" class="form_control form_input" name="nombre" id="nombre"
+                                        placeholder="Ej.: Silvia Pérez" required aria-label="nombre">
+                                </div>
+                                <div class="form_grupo">
+                                    <label for="email" class="form_etiqueta">Email </label>
+                                    <input type="email" class="form_control form_input" name="email" id="email" required aria-label="email">
+                                </div>
+                                <div class="form_grupo">
+                                    <label for="tel" class="form_etiqueta">Teléfono</label>
+                                    <input type="tel" class="form_control form_input" name="tel" id="tel"
+                                        placeholder="Ej.: 541140203040" aria-label="telefono">
+                                </div>
+                                <div class="form_grupo">
+                                    <label for="mensaje" class="form_etiqueta">Escribí tu mensaje</label>
+                                    <textarea class="form_control form_input" name="mensaje" id="mensaje" cols="30"
+                                        rows="5"></textarea>
+                                </div>
+                                <div class="form_grupo">
+                                    <button type="reset" class="boton_form">Borrar</button>
+                                    <button type="submit" class="boton_form">Enviar</button>
+                                </div>
+                            </fieldset>
                         </form>
                     </div>
-                    <div class="col-md-6 col_imagen">
+                    <div class="col-lg-6 d-none d-md-block articulo_col_imagen">
                         <div>
-                            <img src="https://images.unsplash.com/photo-1611264327630-8090373c8cef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+                            <img src="../img/apple-hello.png"
                                 alt="dispositivo apple muestra en pantalla la palabra hello">
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 col-lg-12 visitanos_contenedor">
+                    <div class="col-12 visitanos_contenedor">
                         <div>
                             <h2 class="seccion_h text-center">¡Visitanos!</h2>
                         </div>

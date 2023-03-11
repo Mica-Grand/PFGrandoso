@@ -10,24 +10,27 @@
   vertical-align: baseline;
 }
 
-/*Header - navbar*/
+/* Header - navbar */
 .navbar {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
 }
-.navbar .navbar-brand img {
+
+.navbar-brand img {
   max-height: 300px;
   max-width: 100%;
+}
+
+.navbar .nav-link.active {
+  background-color: #FF9459;
+  color: white;
+  padding-left: 0.5rem;
 }
 
 .nav-link:hover {
   background-color: #FFC371;
   color: white;
-}
-.nav-link.active {
-  background-color: #FF9459;
-  color: white !important;
-  padding-left: 0.2rem;
+  padding-left: 0.5rem;
 }
 
 /*footer*/
@@ -124,8 +127,8 @@
 }
 
 .contenedor_contacto {
-  background-image: url(../img/seccion-contacto-c.png);
-  background-position: top left;
+  background-image: url(../img/seccion-contacto2.png);
+  background-position: center left;
 }
 
 .contenedor_clientes {
@@ -139,7 +142,7 @@
 }
 
 /* Diferentes estilos de parrafo, titulos y espaciado */
-.seccion_titulo {
+.seccion_h2 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   padding-top: 5rem;
@@ -181,62 +184,6 @@
 
 .margen {
   margin-top: 5rem;
-}
-
-/*botones*/
-.boton_chico {
-  margin-top: 2rem;
-  margin-left: 1rem;
-  padding: 1rem;
-  background-color: #FF9459;
-  text-align: center;
-  border-radius: 0.8rem;
-  border-color: #FF9459;
-  border: none;
-}
-.boton_chico:hover {
-  background-color: #FFC371;
-}
-.boton_chico .a_boton_chico {
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1rem;
-}
-
-.boton_grande {
-  margin-top: 3rem;
-  padding: 1.8rem;
-  background-color: #FF9459;
-  text-align: center;
-  border-radius: 2rem;
-  border: none;
-}
-.boton_grande:hover {
-  background-color: #FFC371;
-}
-.boton_grande .a_boton_grande {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 2rem;
-}
-
-.borde_redondeado {
-  border-radius: 1rem;
-}
-
-.boton_form {
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: #FF9459;
-  text-align: center;
-  border-radius: 0.8rem;
-  color: white;
-  border: none;
-}
-.boton_form:hover {
-  background-color: #FFC371;
 }
 
 /* Grilla de servicios */
@@ -286,7 +233,8 @@
   height: 100%;
 }
 
-.articulo_col_imagen {
+/* Dos columnas texto-imagen y texto-texto*/
+.articulo_col_imagen, .resenia_contenedor .resenia .resenia_img {
   padding: 1rem;
   max-width: 100%;
   height: auto;
@@ -299,10 +247,10 @@
 
 .articulo_row {
   margin-top: 5rem;
-  align-items: start;
+  align-items: center;
 }
 
-/*Lista*/
+/*Lista con vinieta y titulo de color*/
 li::marker {
   color: #FF9459;
   font-size: 1.5rem;
@@ -311,74 +259,30 @@ li strong {
   color: #FF9459;
 }
 
-/* contacto */
-.form_col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #f2f2f2;
-  margin: 0;
-  padding: 2rem;
-}
-.form_col .seccion_h {
-  margin-top: 3rem;
-}
-
-.form_grupo {
-  margin: 2rem 0;
-  padding-bottom: 1rem;
-}
-.form_grupo:last-child {
-  text-align: right;
-}
-
-.form_etiqueta {
-  width: 10rem;
-  margin-bottom: 0.3rem;
-}
-
-.form_input {
-  width: calc(100% - 10rem);
-}
-
-.mapa {
-  max-width: 100%;
-  height: 50vh;
-}
-
-.mapa_contenedor {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.visitanos_contenedor {
-  margin-top: 5rem;
-  background-color: white;
-}
-
 /* carrousel */
+.carousel {
+  margin-top: 5rem;
+}
 .carousel .img_carou {
   max-height: 80vh;
   width: auto;
 }
 
-/* clientes */
+/* resenias */
 .resenia_contenedor {
   margin-top: 5rem;
   padding: 2rem;
-}
-
-.resenia {
   background-color: #f2f2f2;
+  border-radius: 1rem;
+}
+.resenia_contenedor .resenia {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem 2.5rem;
 }
-.resenia .resenia_p {
+.resenia_contenedor .resenia .resenia_p {
   text-align: left;
   margin-top: 1rem;
   color: #1B1B1B;
@@ -387,13 +291,287 @@ li strong {
   font-style: italic;
   font-weight: 500;
 }
-.resenia .resenia_p:last-child {
-  font-weight: 600;
+.resenia_contenedor .resenia .resenia_p:last-child {
+  font-weight: 700;
+}
+.resenia_contenedor .resenia .resenia_img {
+  display: block;
 }
 
-.resenia_img {
+/*botones*/
+.boton_chico {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  padding: 1rem;
+  background-color: #FF9459;
+  text-align: center;
+  border-radius: 0.8rem;
+  border: none;
+}
+.boton_chico:hover {
+  background-color: #FFC371;
+}
+.boton_chico .a_boton_chico {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.boton_grande {
+  margin-top: 3rem;
+  padding: 1.8rem;
+  background-color: #FF9459;
+  text-align: center;
+  border-radius: 2rem;
+  border: none;
+}
+.boton_grande:hover {
+  background-color: #FFC371;
+}
+.boton_grande .a_boton_grande {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.borde_redondeado {
+  border-radius: 1rem;
+}
+
+.boton_form {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #FF9459;
+  text-align: center;
+  border-radius: 0.8rem;
+  color: white;
+  border: none;
+}
+.boton_form:hover {
+  background-color: #FFC371;
+}
+
+/* form contacto */
+.visitanos_contenedor {
+  margin-top: 5rem;
+  background-color: white;
+}
+.visitanos_contenedor .mapa_contenedor {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.visitanos_contenedor .mapa_contenedor .mapa {
   max-width: 100%;
-  height: auto;
+  height: 50vh;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  padding-bottom: 1rem;
+  border: none;
+}
+form fieldset:last-child {
+  text-align: right;
+}
+form fieldset label {
+  display: block;
+  margin-bottom: 0.3rem;
+  text-align: left;
+}
+form fieldset input,
+form fieldset textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #1B1B1B;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+form fieldset input:focus,
+form fieldset textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #FF9459;
+}
+form fieldset button.boton_form {
+  margin-right: 1rem;
+  background-color: #FF9459;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+form fieldset button.boton_form:hover {
+  background-color: #FFC371;
+}
+
+/*estilos pantallas pequeñas*/
+@media (max-width: 320px) {
+  /* resenias */
+  .resenia_contenedor {
+    margin-top: 4rem;
+    padding: 1rem;
+  }
+  .resenia_contenedor .resenia {
+    padding: 1rem 1rem;
+  }
+  .resenia_contenedor .resenia .resenia_p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+  .seccion_h, .seccion_h2 {
+    font-size: 1.5rem;
+  }
+  .resenia_p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+  .boton_chico {
+    margin-top: 1rem;
+  }
+  .boton_grande {
+    margin-top: 1.8rem;
+    padding: 0.8rem;
+    border-radius: 1rem;
+  }
+  .a_boton_grande {
+    font-size: 1.2rem;
+  }
+  /* Adaptacion de los hero  */
+  .contenedor_servicios,
+  .contenedor_contacto,
+  .contenedor_quienes-somos,
+  .contenedor_clientes {
+    height: 30vh;
+    padding: 1rem;
+  }
+  .contenedor_hero {
+    height: 70vh;
+  }
+  .hero_titulo {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  .hero_subtitulo {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  fieldset {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  fieldset:last-child {
+    align-items: center;
+  }
+  fieldset label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  fieldset input,
+  fieldset textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  fieldset button {
+    margin-top: 1rem;
+  }
+  /* Seccion recuadro foto y texto  */
+  .seccion_div_container {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .seccion_texto_cont,
+  .seccion_img_cont {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+/* Estilos para pantallas medianas */
+@media (min-width: 321px) and (max-width: 768px) {
+  /*formuulario*/
+  fieldset {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  fieldset:last-child {
+    align-items: center;
+  }
+  fieldset label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  fieldset input,
+  fieldset textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  fieldset button {
+    margin-top: 1rem;
+  }
+  /* Seccion recuadro foto y texto  */
+  .seccion_div_container {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .seccion_texto_cont,
+  .seccion_img_cont {
+    width: 100%;
+    padding: 1rem;
+  }
+  .seccion_h, .seccion_h2 {
+    font-size: 1.8rem;
+  }
+  .seccion_p {
+    font-size: 0.9rem;
+  }
+  .boton_chico {
+    margin-top: 1rem;
+  }
+  /* Adaptacion de los hero  */
+  .contenedor_servicios,
+  .contenedor_contacto,
+  .contenedor_quienes-somos,
+  .contenedor_clientes {
+    height: 30vh;
+    padding: 1rem;
+  }
+  .contenedor_hero {
+    height: 70vh;
+  }
+  .hero_titulo {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+  }
+  .hero_subtitulo {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  .boton_grande {
+    margin-top: 2rem;
+    padding: 0.8rem;
+    border-radius: 1rem;
+  }
+  .a_boton_grande {
+    font-size: 1.5rem;
+  }
+  /* resenias */
+  .resenia_contenedor {
+    margin-top: 4rem;
+    padding: 1rem;
+  }
+  .resenia_contenedor .resenia {
+    padding: 1rem 1rem;
+  }
+  .resenia_contenedor .resenia .resenia_p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
