@@ -30,6 +30,7 @@
 .nav-link:hover {
   background-color: #FFC371;
   color: white;
+  padding-left: 0.5rem;
 }
 
 /*footer*/

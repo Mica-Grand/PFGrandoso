@@ -14,12 +14,14 @@
 }
 
 .navbar .nav-link.active {
-    background-color: #FF9459;
+    background-color: var.$color_principal;
     color: white;
     padding-left: 0.5rem;
 }
 
 .nav-link:hover {
-    background-color: #FFC371;
+    background-color: var.$color_hover;
     color: white;
+    padding-left: 0.5rem;
 }
+
