@@ -1,0 +1,36 @@
+/*footer*/
+
+@use "variables" as var;
+@use "mixins" as mixins;
+
+.footer_contenedor {
+    margin-top: 5rem;
+    font-family: var.$fuente_principal;
+    background-color: var.$color_fondo;
+}
+
+.footer_titulo {
+    font-family: var.$fuente_secundaria;
+    color: var.$color_principal;
+}
+
+.footer_a {
+    color: var.$color_texto;
+    text-decoration: none;
+
+    .bi {
+        color: var.$color_principal;
+        font-size: 1.8rem;
+    }
+}
+
+.footer_derechos {
+    text-align: center;
+    color: var.$color_texto2;
+    background-color: var.$color_principal;
+    width: 100%;
+}
+
+.row_espacio {
+    padding: 2rem;
+}

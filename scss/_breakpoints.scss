@@ -1,0 +1,220 @@
+
+/*estilos pantallas pequeñas*/
+
+@media (max-width: 320px) {
+
+     /* resenias */
+    .resenia_contenedor {
+        margin-top: 4rem;
+        padding: 1rem;
+
+        .resenia {
+            padding: 1rem 1rem;
+
+            .resenia_p {
+                margin-top: 1rem;
+                line-height: 1.5rem;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .seccion_h, .seccion_h2 {
+        font-size: 1.5rem;
+    }
+
+    .resenia_p {
+        margin-top: 1rem;
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .boton_chico {
+        margin-top: 1rem;
+    }
+
+    .boton_grande {
+        margin-top: 1.8rem;
+        padding: 0.8rem;
+        border-radius: 1rem;
+    }
+
+    .a_boton_grande {
+        font-size: 1.2rem;
+    }
+
+
+    /* Adaptacion de los hero  */
+
+
+    .contenedor_servicios,
+    .contenedor_contacto,
+    .contenedor_quienes-somos,
+    .contenedor_clientes {
+        height: 30vh;
+        padding: 1rem;
+    }
+
+    .contenedor_hero {
+        height: 70vh;
+    }
+
+    .hero_titulo {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .hero_subtitulo {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+    
+
+    fieldset {
+        width: 100%;
+        margin: 1rem 0;
+
+        &:last-child {
+            align-items:  center;
+        }
+
+        label {
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            margin-top: 1rem;
+        }
+    }
+
+    /* Seccion recuadro foto y texto  */
+    .seccion_div_container {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .seccion_texto_cont,
+    .seccion_img_cont {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+
+
+/* Estilos para pantallas medianas */
+
+@media (min-width: 321px) and (max-width: 768px) {
+
+    /*formuulario*/
+
+    fieldset {
+        width: 100%;
+        margin: 1rem 0;
+
+        &:last-child {
+            align-items:  center;
+        }
+
+        label {
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            margin-top: 1rem;
+        }
+    }
+
+    /* Seccion recuadro foto y texto  */
+    .seccion_div_container {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .seccion_texto_cont,
+    .seccion_img_cont {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .seccion_h, .seccion_h2 {
+        font-size: 1.8rem;
+    }
+
+    .seccion_p {
+        font-size: 0.9rem;
+    }
+
+
+    .boton_chico {
+        margin-top: 1rem;
+    }
+
+
+    /* Adaptacion de los hero  */
+
+
+    .contenedor_servicios,
+    .contenedor_contacto,
+    .contenedor_quienes-somos,
+    .contenedor_clientes {
+        height: 30vh;
+        padding: 1rem;
+    }
+
+    .contenedor_hero {
+        height: 70vh;
+    }
+
+    .hero_titulo {
+        font-size: 2.5rem;
+        padding: 0.5rem;
+    }
+
+    .hero_subtitulo {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .boton_grande {
+        margin-top: 2rem;
+        padding: 0.8rem;
+        border-radius: 1rem;
+    }
+
+    .a_boton_grande {
+        font-size: 1.5rem;
+    }
+
+
+    /* resenias */
+    .resenia_contenedor {
+        margin-top: 4rem;
+        padding: 1rem;
+
+        .resenia {
+            padding: 1rem 1rem;
+
+            .resenia_p {
+                margin-top: 1rem;
+                line-height: 1.5rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,25 @@
+/* Header - navbar */
+
+@use "variables" as var;
+@use "mixins" as mixins;
+
+.navbar {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+}
+
+.navbar-brand img {
+    max-height: 300px;
+    max-width: 100%;
+}
+
+.navbar .nav-link.active {
+    background-color: #FF9459;
+    color: white;
+    padding-left: 0.5rem;
+}
+
+.nav-link:hover {
+    background-color: #FFC371;
+    color: white;
+}
