@@ -73,7 +73,7 @@
   align-items: center;
   width: 100%;
   height: 87vh;
-  background-image: url(../img/fondo-violeta-c.png);
+  background-image: url(../img/fondo-violeta-c.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -195,6 +195,10 @@
 .grid_figura {
   margin: 0;
   padding: 0.5rem;
+}
+.grid_figura img {
+  max-width: 95px;
+  height: auto;
 }
 
 .ver_mas {
