@@ -443,8 +443,8 @@ form fieldset button.boton_form:hover {
     padding: 0.8rem;
     border-radius: 1rem;
   }
-  .a_boton_grande {
-    font-size: 1.2rem;
+  .boton_grande .a_boton_grande {
+    font-size: 1.5rem;
   }
   /* Adaptacion de los hero  */
   .contenedor_servicios,
@@ -560,7 +560,7 @@ form fieldset button.boton_form:hover {
     padding: 0.8rem;
     border-radius: 1rem;
   }
-  .a_boton_grande {
+  .boton_grande .a_boton_grande {
     font-size: 1.5rem;
   }
   /* resenias */
