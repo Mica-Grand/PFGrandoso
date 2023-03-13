@@ -1,3 +1,16 @@
+/* Scale in en grilla de servicios */
+
+figure.grid_figura {
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+
+/* Generadas en Animista.net */
+
 /* bounce en boton */
 
 button {

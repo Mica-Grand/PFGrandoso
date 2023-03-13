@@ -10,6 +10,8 @@
   vertical-align: baseline;
 }
 
+/* Mixin para propiedades comunes de los botones */
+/* Mixin de propiedades de texto */
 /* Header - navbar */
 .navbar {
   font-family: "Roboto", sans-serif;
@@ -313,13 +315,14 @@ li strong {
 
 /*botones*/
 .boton_chico {
+  background-color: #FF9459;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+  text-align: center;
   margin-top: 2rem;
   margin-left: 1rem;
   padding: 1rem;
-  background-color: #FF9459;
-  text-align: center;
   border-radius: 0.8rem;
-  border: none;
 }
 .boton_chico:hover {
   background-color: #FFC371;
@@ -327,17 +330,19 @@ li strong {
 .boton_chico .a_boton_chico {
   color: white;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1rem;
 }
 
 .boton_grande {
+  background-color: #FF9459;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+  text-align: center;
   margin-top: 3rem;
   padding: 1.8rem;
-  background-color: #FF9459;
-  text-align: center;
   border-radius: 2rem;
-  border: none;
 }
 .boton_grande:hover {
   background-color: #FFC371;
@@ -345,25 +350,30 @@ li strong {
 .boton_grande .a_boton_grande {
   color: white;
   text-decoration: none;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   font-size: 2rem;
-}
-
-.borde_redondeado {
-  border-radius: 1rem;
 }
 
 .boton_form {
   margin-top: 2rem;
   padding: 1rem;
-  background-color: #FF9459;
-  text-align: center;
   border-radius: 0.8rem;
-  color: white;
+  background-color: #FF9459;
   border: none;
+  transition: background-color 0.3s ease-in-out;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 .boton_form:hover {
   background-color: #FFC371;
+}
+
+.borde_redondeado {
+  border-radius: 1rem;
 }
 
 /* form contacto */
@@ -421,6 +431,15 @@ form fieldset button.boton_form:hover {
   background-color: #FFC371;
 }
 
+/* Scale in en grilla de servicios */
+figure.grid_figura {
+  transition: transform 0.3s ease-in-out;
+}
+figure.grid_figura:hover {
+  transform: scale(1.05);
+}
+
+/* Generadas en Animista.net */
 /* bounce en boton */
 button.bounce-top {
   -webkit-animation: bounce-top 0.9s both;
@@ -652,6 +671,7 @@ button.heartbeat {
     line-height: 1.5rem;
     font-size: 1rem;
   }
+  /* Botones */
   .boton_chico {
     margin-top: 1rem;
   }

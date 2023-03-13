@@ -1,4 +1,3 @@
-
 @use "variables" as var;
 
 @mixin hero-titulo-subtitulo {
@@ -10,3 +9,36 @@
     text-shadow: 0.2rem 0.2rem var.$color_texto;
 }
 
+/* Mixin para propiedades comunes de los botones */
+
+@mixin boton-comun {
+    background-color: var.$color_principal;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+
+    &:hover {
+        background-color: var.$color_hover;
+    }
+}
+
+@mixin a-boton-comun {
+    color: var.$color_texto2;
+    text-decoration: none;
+
+    font: {
+        family: var.$fuente_principal;
+        weight: 700;
+    }
+}
+
+/* Mixin de propiedades de texto */
+
+// @mixin texto {
+//     font: {
+//       family: ;
+//       size: ;
+//       weight: ;
+//     }
+//     color: #ff0000;
+//   }
