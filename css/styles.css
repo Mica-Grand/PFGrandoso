@@ -16,6 +16,7 @@
 .navbar {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
+  background-color: white;
 }
 
 .navbar-brand img {
@@ -151,7 +152,6 @@
   background-position: bottom center;
 }
 
-/* Animaciones */
 /* Diferentes estilos de parrafo, titulos y espaciado */
 .seccion_h2 {
   font-family: "Montserrat", sans-serif;
